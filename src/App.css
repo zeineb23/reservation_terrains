@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:10%;
+  background-color: #f8f9fa; /* Adjust this color as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for better separation */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headBtn {
+  display: flex;
+  float:right;
+}
+.container .title {
+  font-size: 1.5em;
+  padding-top: 17px ;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-top:15px;
+}
+.title img {
+  vertical-align: middle;
+}
+
+.tab{
+  /*margin : 0 auto;*/
+  margin-top : 10%;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  /*align-items: center; Centre verticalement (si nécessaire) */
+  height: 100vh; 
+  text-align: center;
+}
+
+.activate_tab{
+  background-color: #f8f9fa;
+  border: 1px solid;
+  width: 100%;
+}
+
+.activate_tab td{
+  border:1px solid;
+  padding:1%;
+}
+
+.activate_tab thead{
+  font-weight: bold;
+}
+
+.modal_activate{
+}

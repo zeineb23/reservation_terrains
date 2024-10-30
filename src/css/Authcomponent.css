@@ -1,0 +1,162 @@
+/* AuthComponent.css */
+.body_new {
+  background: linear-gradient(130deg, yellow, #f5f5f5, #1e90ff);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title{
+  margin-top:0px;
+  margin-bottom:35px;
+  border-bottom: #333;
+  text-align : center;
+  color: #003366;
+  font-size:x-large;
+  
+}
+
+.logo{
+  height : 8%;
+  width : 8%;
+  margin-left : 10px;
+  margin-right : 10px;
+}
+
+.logo_3{
+  height : 2.3%;
+  width : 2.3%;
+  margin-left : 10px;
+  margin-right : 10px;
+}
+
+
+.logo_2{
+  height : 6%;
+  width : 6%;
+  margin-left : 10px;
+  margin-right : 10px;
+}
+
+.cnx_tab{
+  margin : auto;
+  width: 90%;   
+  background-color: #f5f5f5;
+  border-radius: 10px;   
+}
+.cnx_tab tr:last-child td {
+  text-align: center; 
+  padding-bottom: 20px;
+}
+
+.cnx_tab tr:first-child td {
+  padding-top: 20px;
+}
+
+.cnx_tab td{
+  padding-right: 2px;
+  padding-left: 15px;
+}
+
+.auth-container {
+    background-color: white;
+    border: 2px solid white; /* Tennis blue theme */
+    border-radius: 10px;
+    padding-bottom: 40px;
+    padding-left:50px;
+    padding-right:50px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h4 {
+    padding-bottom: 30px;
+    margin-left:40%;
+    color: #186fc7;
+    font-family: 'Arial', sans-serif;
+  
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #104a75;
+  }
+  
+ input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .register_tab{
+    background-color: #f5f5f5;
+    border-radius: 10px; 
+    padding-top:15px;
+  }
+
+  .register_tab h5{
+    font-weight: bold;
+  }
+
+  .register_tab tr:first-child td {
+    padding-bottom: 30px;
+    text-align: center;
+    color: #186fc7;
+    font-family: 'Arial', sans-serif;
+    padding-top: 20px;
+  }
+
+  .register_tab tr:last-child td {
+    padding-bottom: 30px;
+    
+  }
+  
+
+  .register_tab td{
+    padding-right:15px;
+    padding-left:15px;
+  }
+  
+  .register_btn {
+    background-color: white;
+    color: #1e90ff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register_btn:hover {
+    background-color: #104a75; /* Darker blue for hover effect */
+  }
+  
+  .auth-container p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .new_form{
+    margin : auto;
+    padding-bottom : 15%;
+  }
