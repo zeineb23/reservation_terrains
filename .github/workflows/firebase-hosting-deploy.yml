@@ -14,18 +14,18 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Updated to v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Updated to v3
         with:
-          node-version: '16'  # Use Node.js version 16
+          node-version: '20'  # Use Node.js version 20
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci  # Install dependencies using npm
 
       - name: Build the project
-        run: npm run build
+        run: npm run build  # Build the React app
 
       - name: Deploy to Firebase Hosting
         run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}  # Ensure your Firebase token is set in GitHub Secrets
