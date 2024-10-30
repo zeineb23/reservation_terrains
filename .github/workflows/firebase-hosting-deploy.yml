@@ -1,36 +1,31 @@
-name: Firebase Hosting Deploy
+name: Deploy to Firebase Hosting
 
 on:
   push:
     branches:
-      - main  # Change this to your default branch if necessary
+      - main  # Change to your branch if necessary
   pull_request:
     branches:
-      - main  # Change this to your default branch if necessary
+      - main  # Change to your branch if necessary
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Specify the Node.js version your project uses
+          node-version: '16'  # Use Node.js version 16
 
       - name: Install dependencies
-        run: npm install  # Adjust this if you use yarn or another package manager
+        run: npm ci
 
-      - name: Build project
-        run: npm run build  # This should create a build directory for your React app
+      - name: Build the project
+        run: npm run build
 
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          channelId: live  # Change this if you want to deploy to a different channel
-          projectId: your-firebase-project-id  # Replace with your actual project ID
-          workingDirectory: ./build  # This is the default output directory for create-react-app
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}  # Ensure your Firebase token is set in GitHub Secrets
